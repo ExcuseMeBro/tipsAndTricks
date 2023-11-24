@@ -1,3 +1,4 @@
+// https://www.jstips.co/
 // *** #1 tip ***
 const arr1 = ['Kolade', 'Chelsea', 10, true];
 const arr2 = [1, 2, 3, 4];
