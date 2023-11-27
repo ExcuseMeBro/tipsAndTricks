@@ -13,7 +13,7 @@ const shape: Circle = {
 console.log(shape)
 
 // *** #2 tip | Understand Declared Type and Narrowed Type ***
-function foo(x: string | number) {
+/*function foo(x: string | number) {
     if (typeof x === 'string') {
         // x's type is narrowed to string, so .length is valid
         console.log(x.length);
@@ -24,7 +24,7 @@ function foo(x: string | number) {
     } else {
         console.log("else")
     }
-}
+}*/
 
 // *** #3 tip | Use Discriminated Union Instead of Optional Fields ***
 type CircleType = { kind: 'circle'; radius: number };
@@ -58,3 +58,5 @@ console.log(greet("Alice")); // Hello, Alice!
 console.log(greet("Bob", "Hi")); // Hi, Bob!
 
 // https://javascript.plainenglish.io/10-typescript-tips-and-tricks-every-developer-should-know-dd00d745dd71
+// https://softwaremill.com/4-typescript-tips-to-improve-your-developer-experience-that-you-might-not-know/
+// https://www.totaltypescript.com/tips
