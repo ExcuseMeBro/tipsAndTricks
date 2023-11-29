@@ -1,1 +1,1 @@
-console.log('Hi')
+// This is main file
