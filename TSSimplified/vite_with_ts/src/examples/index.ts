@@ -102,7 +102,7 @@ const X: APIResponse = {
 }
 
 // Array to Object
-function aToO<T>(array: [string, T][]) {
+function arrayToObject<T>(array: [string, T][]) {
     const obj: {
         [index: string]: T
     } = {}
@@ -120,4 +120,4 @@ const arr: [string, number | boolean][] = [
     ['keyThree', true],
 ]
 
-const obj = aToO(arr)
+const obj = arrayToObject(arr)
