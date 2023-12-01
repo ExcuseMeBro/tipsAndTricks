@@ -125,3 +125,36 @@ function createArrayPair<T, K>(elem1: T, elem2: K): [T, K] {
 }
 
 createArrayPair("hello", 24);
+
+// Don't using 'any', use 'unknown'
+
+// satisfies
+
+// *** Using Enum *** 
+
+// bad way ⛔ 
+enum BadState {
+  InProgress,
+  Success,
+  Fail,
+}
+
+BadState.InProgress;
+BadState.Success;
+BadState.Fail;
+
+const badCheckState = (state: BadState) => {
+  //
+};
+
+// badCheckState(100);
+
+// good way ✔ 
+type GoodState = "InProgress" | "Success" | "Fail";
+enum GoodStateEnum {
+  InProgress = "InProgress",
+  Success = "Success",
+  Fail = "Fail",
+}
+
+const goodCheckState = (state: GoodState) => {};
